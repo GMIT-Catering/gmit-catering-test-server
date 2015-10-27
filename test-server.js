@@ -1,6 +1,8 @@
 var express = require('express');
 var app = express();
 
+app.set('port', (process.env.PORT || 5000));
+
 // middleware
 app.use(function (req, res, next) {
     // Website you wish to allow to connect
@@ -88,6 +90,10 @@ app.get('/recoveruserpw/:customerLg/:customerEmail', function(req, res){
   res.send(JSON.stringify(result));
 });
 
-var server = app.listen(9090, '127.0.0.1');
+app.listen(app.get('port'), function() {
+  console.log('Node app is running on port', app.get('port'));
+});
+
+//var server = app.listen(9090, '127.0.0.1');
 //193.1.57.4
-console.log("Web Service running on 127.0.0.1:9090");
+//console.log("Web Service running on 127.0.0.1:9090");
