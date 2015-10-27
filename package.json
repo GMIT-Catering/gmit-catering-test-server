@@ -4,11 +4,19 @@
   "description": "server to test app against",
   "main": "test-server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node test-server.js"
   },
-  "author": "",
+  "author": "Ronan Connolly",
   "license": "ISC",
+  "keywords": [
+    "node",
+    "heroku",
+    "express"
+  ],
   "dependencies": {
     "express": "^4.13.3"
+  },
+  "engines": {
+    "node": "4.2.1"
   }
 }
