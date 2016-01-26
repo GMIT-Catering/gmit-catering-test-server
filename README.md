@@ -1,3 +1,2 @@
-# GMIT Catering Test Server
-
-This is the readme for the test server.
+# gmit-catering-test-server
+A test node/express server for the "GMIT Catering" mobile app.
